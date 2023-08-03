@@ -1,0 +1,26 @@
+#header{
+    min-height: 56px;
+}
+#content{
+    min-height: 400px;
+}
+#aside{
+    min-width: 300px;
+    flex: 1;
+}
+#galery{
+    flex: 4;
+    min-width: 300px;
+}
+#footer{
+    font-family: 'Times New Roman', Times, serif;
+    flex: 1;
+    min-height: 50px;
+    min-width: 300px;
+    /* min-width: 550px; */
+}
+.card{
+    width: 18rem; 
+    height: 14rem;
+    min-width: 16rem;
+}

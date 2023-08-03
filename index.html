@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Naturaleza Viva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="min-vh-100 d-flex flex-column">
+
+    <!-- HEADER -->
+    <div id="header">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Galeria Naturaleza Viva</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Naturaleza</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tópicos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Estaciones
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Primavera</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Verano</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Otoño</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Invierno</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- CONTENT -->
+    <div id="content" class="d-flex text-center flex-grow-1 flex-wrap p-0">
+        <div id="aside" class="m-0 px-3">
+            <h2 class="mt-3">Iniciar Sesion</h2>
+            <div class="shadow-lg p-3 mt-3">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
+                    <textarea class="form-control" style="max-height: 25s0px;" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+        <div id="galery" class=" m-0 d-flex flex-wrap justify-content-around align-content-around">
+            <div class="card m-3 shadow-lg border-secondary">
+                <img src="https://www.xtrafondos.com/wallpapers/resized/paisaje-digital-en-atardecer-5846.jpg?s=large" class="card-img-top h-75" alt="montaña">
+                <div class="card-body h-25 d-flex p-2 justify-content-center position-relative">
+                    <p class="card-text text-primary-emphasis d-flex align-items-center m-0">Montañas</p>
+                    <button class="btn btn-primary btn-sm position-absolute end-0 bottom-0 m-2">Ver mas</button>
+                </div>
+            </div>
+            <div class="card m-3 shadow-lg border-secondary">
+                <img src="https://www.salvalaselva.org/photos/article/facebook/fb/es/borneo-regenwald.jpg" class="card-img-top h-75" alt="selva">
+                <div class="card-body h-25 d-flex p-2 justify-content-center position-relative">
+                    <p class="card-text text-primary-emphasis d-flex align-items-center m-0">Selva</p>
+                    <button class="btn btn-primary btn-sm position-absolute end-0 bottom-0 m-2">Ver mas</button>
+                </div>
+            </div>
+            <div class="card m-3 shadow-lg border-secondary">
+                <img src="https://www.iagua.es/sites/default/files/que-es-y-como-se-forma-la-nieve.jpg" class="card-img-top h-75" alt="nieve">
+                <div class="card-body h-25 d-flex p-2 justify-content-center position-relative">
+                    <p class="card-text text-primary-emphasis d-flex align-items-center m-0">Nieve</p>
+                    <button class="btn btn-primary btn-sm position-absolute end-0 bottom-0 m-2">Ver mas</button>
+                </div>
+            </div>
+            <div class="card m-3 shadow-lg border-secondary">
+                <img src="https://concepto.de/wp-content/uploads/2018/09/desierto2-e1537800197353-800x400.jpg" class="card-img-top h-75" alt="desierto">
+                <div class="card-body h-25 d-flex p-2 justify-content-center position-relative">
+                    <p class="card-text text-primary-emphasis d-flex align-items-center m-0">Desierto</p>
+                    <button class="btn btn-primary btn-sm position-absolute end-0 bottom-0 m-2">Ver mas</button>
+                </div>
+            </div>
+            <div class="card m-3 shadow-lg border-secondary">
+                <img src="https://concepto.de/wp-content/uploads/2018/10/sabana-africana-e1539983111857-800x400.jpg" class="card-img-top h-75" alt="sabana">
+                <div class="card-body h-25 d-flex p-2 justify-content-center position-relative">
+                    <p class="card-text text-primary-emphasis d-flex align-items-center m-0">Sabana</p>
+                    <button class="btn btn-primary btn-sm position-absolute end-0 bottom-0 m-2">Ver mas</button>
+                </div>
+            </div>
+            <div class="card m-3 shadow-lg border-secondary">
+                <img src="https://images.theconversation.com/files/246673/original/file-20181121-161621-tvw7sv.jpg?ixlib=rb-1.1.0&rect=49%2C199%2C5550%2C2775&q=45&auto=format&w=1356&h=668&fit=crop" class="card-img-top h-75" alt="mar">
+                <div class="card-body text-primary-emphasis h-25 d-flex p-2 justify-content-center position-relative">
+                    <p class="card-text d-flex align-items-center m-0">Mar</p>
+                    <button class="btn btn-primary btn-sm position-absolute end-0 bottom-0 m-2">Ver mas</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->s
+    <div id="footer" class="bg-dark w-100 d-flex flex-column justify-content-center align-items-center text-white">
+        <span>© Desarrollado por Alfred Marvin </span>
+        <span>Mas contenido y desarrollo web en <span class="text-success">https://akazanova0754.github.io</span> </span>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
